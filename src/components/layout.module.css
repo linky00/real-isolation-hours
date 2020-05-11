@@ -1,3 +1,15 @@
 .body {
     background-color: gray;
 }
+
+.box {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.column:last-of-type {
+    padding: 0 20px 0 0;
+}

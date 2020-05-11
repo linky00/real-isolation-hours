@@ -1,10 +1,11 @@
 import React from "react"
+import {Link} from "gatsby"
 import {container, link} from "./header.module.css"
 
-export default ({children}) => (
-    <div className={container}>
-        {React.Children.map(children, child => (
-            React.cloneElement(child, {className: link})
-        ))}
-    </div>
+export const HeaderContainer = ({children}) => (
+    <div className={container}>{children}</div>
+)
+
+export const HeaderLink = ({to, children}) => (
+    <Link to={to} className={link}>{children}</Link>
 )

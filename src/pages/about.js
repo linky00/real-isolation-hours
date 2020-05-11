@@ -1,14 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import {HeaderContainer, HeaderLink} from "../components/header"
-import Camera from "../components/camera"
+import Paragraph from "../components/paragraph"
 
 export default () => (
     <Layout>
         <HeaderContainer>
-            <HeaderLink to="/about">ABOUT</HeaderLink>
-            <HeaderLink to="/submit">SUBMIT CONTENT</HeaderLink>
+            <HeaderLink to="/">BACK</HeaderLink>
         </HeaderContainer>
-        <Camera />
+        <Paragraph>Boop.</Paragraph>
     </Layout>
 )
